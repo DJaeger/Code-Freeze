@@ -3,38 +3,37 @@
 /*
 Plugin Name: Code Freeze
 Plugin URI: http://wordpress.org/extend/plugins/code-freeze/
-Description: Temporarily puts your WordPress into a "read only" state. When activated, comments and trackbacks are temporarily disabled as well as changes in the dashboard. Deactivate to restore full functionality.
-Author: Kevin Davis
-Author URI: http://www.davistribe.org/
+Description: Puts your WordPress into a "read only" state. When activated, comments and trackbacks are disabled as well as changes in the dashboard. Deactivate to restore full functionality.
+Author: Daniel Jäger & Kevin Davis
+Author URI: http://djaeger.info/
 Text Domain: codefreeze
 Domain Path: /languages/
-Version: 1.2.3
-License: GPLv2
+Version: 1.2.4
+License: GPLv3
 */
 
 /**
  * LICENSE
  * This file is part of Code Freeze.
- *
- * Code Freeze is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * 
+ * Code Freeze is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * Code Freeze is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ * along with Code Freeze.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @package    code-freeze
- * @author     Kevin Davis <kev@tnw.org>
- * @copyright  Copyright 2012 Kevin Davis
- * @license    http://www.gnu.org/licenses/gpl.txt GPL 2.0
- * @link       http://www.davistribe.org/codefreeze/
+ * @author     Daniel Jäger <mail@djaeger.info>
+ * @copyright  Copyright 2016 Daniel Jäger
+ * @license    http://www.gnu.org/licenses/gpl-3.0.txt GPL 3.0
+ * @link       http://wordpress.org/extend/plugins/code-freeze/
  */
 
 if ( ! function_exists( 'cf_custom_login_message' ) ) {
