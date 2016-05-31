@@ -1,6 +1,22 @@
 /*
  * @package  code-freeze
  */
+ 
+(function ($) {
+
+    $.fn.filterByData = function (prop, val) {
+        var $self = this;
+        if (typeof val === 'undefined') {
+            return $self.filter(
+                function () { return typeof $(this).data(prop) !== 'undefined'; }
+            );
+        }
+        return $self.filter(
+            function () { return $(this).data(prop) == val; }
+        );
+    };
+
+})(window.jQuery);
 
 jQuery(document).ready(function($) {
 	// set form elements to disabled
@@ -73,5 +89,7 @@ jQuery(document).ready(function($) {
 	
 	// do kindly allow this plugin to be deactivated by authorized persons
 	$("#code-freeze.active td.plugin-title div.row-actions").show();
+	// Since WP 4.2 we have to you the slug defined in a data attribute to find the correct row-actions
+	$('tr.active').filterByData('slug','code-freeze').find("td.plugin-title div.row-actions").show();
 	
 });
