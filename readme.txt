@@ -1,7 +1,7 @@
 ﻿=== Code Freeze ===
-Contributors: k3davis
+Contributors: Daniel Jäger, k3davis
 Tags: code freeze, read only, disable, disable comments, disable dashboard, migration
-Author URI: http://www.davistribe.org/code/
+Author URI: http://djaeger.info/
 Requires at least: 3.0
 Tested up to: 4.5.2
 Stable tag: trunk
